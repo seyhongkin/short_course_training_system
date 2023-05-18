@@ -110,5 +110,47 @@
   <ItemGroup>
     <None Include="Resources\ic_round-class.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mdi_user-circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mdi_user-circle %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vector.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_round-dashboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_round-dashboard %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ri_logout-circle-line.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vector %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vector %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vector %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mdi_about.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vector %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\material-symbols_patient-list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vector %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\material-symbols_meeting-room-rounded %281%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

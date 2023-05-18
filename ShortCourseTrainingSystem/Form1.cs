@@ -12,7 +12,7 @@ namespace ShortCourseTrainingSystem
 {
     public partial class Form1 : Form
     {
-        private Color dBackColor = Color.FromArgb(34,34,34);
+        private Color dBackColor = Color.FromArgb(50,50,50);
         private Color cBackColor = Color.FromArgb(89, 89, 89);
         public Form1()
         {
@@ -37,8 +37,7 @@ namespace ShortCourseTrainingSystem
         private void miCourse_Click(object sender, EventArgs e)
         {
             miCourse.BackColor = cBackColor;
-            courses1.Show();
-            dashboard1.Hide();
+        
         }
 
         private void miCourse_Leave(object sender, EventArgs e)
@@ -46,9 +45,17 @@ namespace ShortCourseTrainingSystem
             miCourse.BackColor = dBackColor;
         }
 
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            DateTime now = DateTime.Now;
+            this.lbDate.Text = now.ToLongDateString();
+            this.lbTime.Text = now.ToLongTimeString();
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
-            courses1.Hide();
+            timer1.Start();
+            miDashboard_Click(sender, e);
         }
     }
 }
