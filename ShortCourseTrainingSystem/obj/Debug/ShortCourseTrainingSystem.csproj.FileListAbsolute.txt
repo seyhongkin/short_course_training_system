@@ -1,0 +1,13 @@
+D:\Class\C#\Year2\ShortCourseTrainingSystem\ShortCourseTrainingSystem\bin\Debug\ShortCourseTrainingSystem.exe.config
+D:\Class\C#\Year2\ShortCourseTrainingSystem\ShortCourseTrainingSystem\bin\Debug\ShortCourseTrainingSystem.exe
+D:\Class\C#\Year2\ShortCourseTrainingSystem\ShortCourseTrainingSystem\bin\Debug\ShortCourseTrainingSystem.pdb
+D:\Class\C#\Year2\ShortCourseTrainingSystem\ShortCourseTrainingSystem\obj\Debug\ShortCourseTrainingSystem.csproj.AssemblyReference.cache
+D:\Class\C#\Year2\ShortCourseTrainingSystem\ShortCourseTrainingSystem\obj\Debug\ShortCourseTrainingSystem.csproj.SuggestedBindingRedirects.cache
+D:\Class\C#\Year2\ShortCourseTrainingSystem\ShortCourseTrainingSystem\obj\Debug\ShortCourseTrainingSystem.Form1.resources
+D:\Class\C#\Year2\ShortCourseTrainingSystem\ShortCourseTrainingSystem\obj\Debug\ShortCourseTrainingSystem.Properties.Resources.resources
+D:\Class\C#\Year2\ShortCourseTrainingSystem\ShortCourseTrainingSystem\obj\Debug\ShortCourseTrainingSystem.csproj.GenerateResource.cache
+D:\Class\C#\Year2\ShortCourseTrainingSystem\ShortCourseTrainingSystem\obj\Debug\ShortCourseTrainingSystem.csproj.CoreCompileInputs.cache
+D:\Class\C#\Year2\ShortCourseTrainingSystem\ShortCourseTrainingSystem\obj\Debug\ShortCourseTrainingSystem.exe
+D:\Class\C#\Year2\ShortCourseTrainingSystem\ShortCourseTrainingSystem\obj\Debug\ShortCourseTrainingSystem.pdb
+D:\Class\C#\Year2\ShortCourseTrainingSystem\ShortCourseTrainingSystem\obj\Debug\ShortCourseTrainingSystem.Dashboard.resources
+D:\Class\C#\Year2\ShortCourseTrainingSystem\ShortCourseTrainingSystem\obj\Debug\ShortCourseTrainingSystem.Courses.resources
