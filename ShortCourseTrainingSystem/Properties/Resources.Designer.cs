@@ -123,6 +123,36 @@ namespace ShortCourseTrainingSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap JONGREAN__1_ {
+            get {
+                object obj = ResourceManager.GetObject("JONGREAN (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap JONGREAN__2_ {
+            get {
+                object obj = ResourceManager.GetObject("JONGREAN (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap JONGREAN1 {
+            get {
+                object obj = ResourceManager.GetObject("JONGREAN1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap material_symbols_meeting_room_rounded {
             get {
                 object obj = ResourceManager.GetObject("material-symbols_meeting-room-rounded", resourceCulture);
@@ -203,6 +233,16 @@ namespace ShortCourseTrainingSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap profile {
+            get {
+                object obj = ResourceManager.GetObject("profile", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ri_dashboard_3_fill {
             get {
                 object obj = ResourceManager.GetObject("ri_dashboard-3-fill", resourceCulture);
@@ -226,6 +266,16 @@ namespace ShortCourseTrainingSystem.Properties {
         internal static System.Drawing.Bitmap ri_logout_circle_line {
             get {
                 object obj = ResourceManager.GetObject("ri_logout-circle-line", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap undraw_Login_re_4vu2 {
+            get {
+                object obj = ResourceManager.GetObject("undraw_Login_re_4vu2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
