@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnMenu = new System.Windows.Forms.Panel();
             this.pnMenuHighLight = new System.Windows.Forms.Panel();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -36,42 +36,43 @@
             this.pnUser = new System.Windows.Forms.Panel();
             this.lbUserName = new System.Windows.Forms.Label();
             this.lbPosition = new System.Windows.Forms.Label();
+            this.picUser = new OvalPictureBox();
             this.miLogout = new System.Windows.Forms.Button();
             this.miAbout = new System.Windows.Forms.Button();
             this.miProfile = new System.Windows.Forms.Button();
             this.miRoom = new System.Windows.Forms.Button();
-            this.miInvoice = new System.Windows.Forms.Button();
+            this.miPayment = new System.Windows.Forms.Button();
             this.miCourse = new System.Windows.Forms.Button();
             this.miStudent = new System.Windows.Forms.Button();
             this.miTeacher = new System.Windows.Forms.Button();
             this.miDashboard = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.picUser = new OvalPictureBox();
-            this.panel1.SuspendLayout();
+            this.pnLoadForm = new System.Windows.Forms.Panel();
+            this.pnMenu.SuspendLayout();
             this.panelMenu.SuspendLayout();
             this.panel2.SuspendLayout();
             this.pnUser.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picUser)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // pnMenu
             // 
-            this.panel1.Controls.Add(this.pnMenuHighLight);
-            this.panel1.Controls.Add(this.miAbout);
-            this.panel1.Controls.Add(this.miProfile);
-            this.panel1.Controls.Add(this.miRoom);
-            this.panel1.Controls.Add(this.miInvoice);
-            this.panel1.Controls.Add(this.miCourse);
-            this.panel1.Controls.Add(this.miStudent);
-            this.panel1.Controls.Add(this.miTeacher);
-            this.panel1.Controls.Add(this.miDashboard);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 60);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(206, 401);
-            this.panel1.TabIndex = 1;
+            this.pnMenu.Controls.Add(this.pnMenuHighLight);
+            this.pnMenu.Controls.Add(this.miAbout);
+            this.pnMenu.Controls.Add(this.miProfile);
+            this.pnMenu.Controls.Add(this.miRoom);
+            this.pnMenu.Controls.Add(this.miPayment);
+            this.pnMenu.Controls.Add(this.miCourse);
+            this.pnMenu.Controls.Add(this.miStudent);
+            this.pnMenu.Controls.Add(this.miTeacher);
+            this.pnMenu.Controls.Add(this.miDashboard);
+            this.pnMenu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnMenu.Location = new System.Drawing.Point(0, 60);
+            this.pnMenu.Margin = new System.Windows.Forms.Padding(2);
+            this.pnMenu.Name = "pnMenu";
+            this.pnMenu.Size = new System.Drawing.Size(206, 401);
+            this.pnMenu.TabIndex = 1;
             // 
             // pnMenuHighLight
             // 
@@ -85,7 +86,7 @@
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.panelMenu.Controls.Add(this.miLogout);
-            this.panelMenu.Controls.Add(this.panel1);
+            this.panelMenu.Controls.Add(this.pnMenu);
             this.panelMenu.Controls.Add(this.pictureBox1);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
@@ -138,7 +139,6 @@
             this.lbUserName.TabIndex = 4;
             this.lbUserName.Text = "Phol Somnang";
             this.lbUserName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lbUserName.Click += new System.EventHandler(this.lbUserName_Click);
             // 
             // lbPosition
             // 
@@ -150,6 +150,23 @@
             this.lbPosition.TabIndex = 5;
             this.lbPosition.Text = "Cashier";
             this.lbPosition.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // picUser
+            // 
+            this.picUser.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.picUser.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.picUser.BorderColor2 = System.Drawing.Color.HotPink;
+            this.picUser.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.picUser.BorderSize = 2;
+            this.picUser.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picUser.GradientAngle = 50F;
+            this.picUser.Image = global::ShortCourseTrainingSystem.Properties.Resources.profile;
+            this.picUser.Location = new System.Drawing.Point(152, 6);
+            this.picUser.Name = "picUser";
+            this.picUser.Size = new System.Drawing.Size(40, 40);
+            this.picUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picUser.TabIndex = 3;
+            this.picUser.TabStop = false;
             // 
             // miLogout
             // 
@@ -238,27 +255,27 @@
             this.miRoom.Click += new System.EventHandler(this.miRoom_Click);
             this.miRoom.Leave += new System.EventHandler(this.miRoom_Leave);
             // 
-            // miInvoice
+            // miPayment
             // 
-            this.miInvoice.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.miInvoice.Dock = System.Windows.Forms.DockStyle.Top;
-            this.miInvoice.FlatAppearance.BorderSize = 0;
-            this.miInvoice.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.miInvoice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.miInvoice.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.miInvoice.Image = global::ShortCourseTrainingSystem.Properties.Resources.iconamoon_invoice_fill;
-            this.miInvoice.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.miInvoice.Location = new System.Drawing.Point(0, 184);
-            this.miInvoice.Margin = new System.Windows.Forms.Padding(2);
-            this.miInvoice.Name = "miInvoice";
-            this.miInvoice.Padding = new System.Windows.Forms.Padding(15, 6, 0, 6);
-            this.miInvoice.Size = new System.Drawing.Size(206, 46);
-            this.miInvoice.TabIndex = 7;
-            this.miInvoice.Text = "          Invoices";
-            this.miInvoice.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.miInvoice.UseVisualStyleBackColor = true;
-            this.miInvoice.Click += new System.EventHandler(this.miInvoice_Click);
-            this.miInvoice.Leave += new System.EventHandler(this.miInvoice_Leave);
+            this.miPayment.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.miPayment.Dock = System.Windows.Forms.DockStyle.Top;
+            this.miPayment.FlatAppearance.BorderSize = 0;
+            this.miPayment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.miPayment.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.miPayment.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.miPayment.Image = global::ShortCourseTrainingSystem.Properties.Resources.iconamoon_invoice_fill;
+            this.miPayment.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.miPayment.Location = new System.Drawing.Point(0, 184);
+            this.miPayment.Margin = new System.Windows.Forms.Padding(2);
+            this.miPayment.Name = "miPayment";
+            this.miPayment.Padding = new System.Windows.Forms.Padding(15, 6, 0, 6);
+            this.miPayment.Size = new System.Drawing.Size(206, 46);
+            this.miPayment.TabIndex = 7;
+            this.miPayment.Text = "          Payment";
+            this.miPayment.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.miPayment.UseVisualStyleBackColor = true;
+            this.miPayment.Click += new System.EventHandler(this.miInvoice_Click);
+            this.miPayment.Leave += new System.EventHandler(this.miInvoice_Leave);
             // 
             // miCourse
             // 
@@ -360,29 +377,20 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // picUser
+            // pnLoadForm
             // 
-            this.picUser.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
-            this.picUser.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.picUser.BorderColor2 = System.Drawing.Color.HotPink;
-            this.picUser.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            this.picUser.BorderSize = 2;
-            this.picUser.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picUser.GradientAngle = 50F;
-            this.picUser.Image = global::ShortCourseTrainingSystem.Properties.Resources.profile;
-            this.picUser.Location = new System.Drawing.Point(152, 6);
-            this.picUser.Name = "picUser";
-            this.picUser.Size = new System.Drawing.Size(40, 40);
-            this.picUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picUser.TabIndex = 3;
-            this.picUser.TabStop = false;
-            this.picUser.Click += new System.EventHandler(this.picUser_Click);
+            this.pnLoadForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnLoadForm.Location = new System.Drawing.Point(206, 54);
+            this.pnLoadForm.Name = "pnLoadForm";
+            this.pnLoadForm.Size = new System.Drawing.Size(671, 484);
+            this.pnLoadForm.TabIndex = 2;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(877, 538);
+            this.Controls.Add(this.pnLoadForm);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panelMenu);
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -391,20 +399,20 @@
             this.Text = "Short Course Training";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainForm_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.panel1.ResumeLayout(false);
+            this.pnMenu.ResumeLayout(false);
             this.panelMenu.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.pnUser.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picUser)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pnMenu;
         private System.Windows.Forms.Button miCourse;
         private System.Windows.Forms.Button miDashboard;
         private System.Windows.Forms.Panel panelMenu;
@@ -419,10 +427,11 @@
         private System.Windows.Forms.Button miStudent;
         private System.Windows.Forms.Button miTeacher;
         private System.Windows.Forms.Button miRoom;
-        private System.Windows.Forms.Button miInvoice;
+        private System.Windows.Forms.Button miPayment;
         private OvalPictureBox picUser;
         private System.Windows.Forms.Label lbTabName;
         private System.Windows.Forms.Panel pnMenuHighLight;
+        private System.Windows.Forms.Panel pnLoadForm;
     }
 }
 

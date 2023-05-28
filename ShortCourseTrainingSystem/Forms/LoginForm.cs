@@ -15,6 +15,43 @@ namespace ShortCourseTrainingSystem.Forms
     {
         private Color dangerColor = Color.FromArgb(208, 28, 60);
 
+        public LoginForm()
+        {
+            InitializeComponent();
+            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
+        }
+
+        //drop shadow
+        private const int CS_DropShadow = 0x00020000;
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams cp = base.CreateParams;
+                cp.ClassStyle |= CS_DropShadow;
+                return cp;
+            }
+        }
+
+        //drag form
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+
+        private void LoginForm_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void pictureBox2_MouseDown(object sender, MouseEventArgs e)
+        {
+            LoginForm_MouseDown(null, null);
+        }
+
+        //create border radius
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
         (
@@ -25,12 +62,6 @@ namespace ShortCourseTrainingSystem.Forms
             int nWidthEllipse, // width of ellipse
             int nHeightEllipse // height of ellipse
         );
-
-        public LoginForm()
-        {
-            InitializeComponent();
-            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
-        }
 
         private void pUsername_Click(object sender, EventArgs e)
         {
@@ -65,8 +96,25 @@ namespace ShortCourseTrainingSystem.Forms
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if(txtUsername.Text != "admin" || txtPassword.Text != "admin")
+            string username = txtUsername.Text.Trim();
+            string password = txtPassword.Text.Trim();
+            if (username == "")
             {
+                txtUsername.Focus();
+                lbWarning.Text = "Field username cannot be empty.";
+                return;
+            }
+            if (password == "")
+            {
+                txtPassword.Focus();
+                lbWarning.Text = "Field password field cannot be empty.";
+                return;
+            }
+
+            if (username != "admin" || password != "admin")
+            {
+                txtUsername.Focus();
+                lbWarning.Text = "The username or password is incorrect.";
                 return;
             }
 
@@ -101,5 +149,17 @@ namespace ShortCourseTrainingSystem.Forms
             btnExit.BackColor = Color.White;
             btnExit.ForeColor = dangerColor;
         }
+
+        private void txtUsername_TextChanged(object sender, EventArgs e)
+        {
+            lbWarning.Text = "";
+        }
+
+        private void txtPassword_TextChanged(object sender, EventArgs e)
+        {
+            lbWarning.Text = "";
+        }
+
+        
     }
 }

@@ -73,6 +73,26 @@ namespace ShortCourseTrainingSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fluent_mdl2_money {
+            get {
+                object obj = ResourceManager.GetObject("fluent-mdl2_money", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Group_8 {
+            get {
+                object obj = ResourceManager.GetObject("Group 8", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ic_round_class {
             get {
                 object obj = ResourceManager.GetObject("ic_round-class", resourceCulture);
@@ -143,6 +163,16 @@ namespace ShortCourseTrainingSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap JONGREAN__3_ {
+            get {
+                object obj = ResourceManager.GetObject("JONGREAN (3)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap JONGREAN1 {
             get {
                 object obj = ResourceManager.GetObject("JONGREAN1", resourceCulture);
@@ -203,6 +233,26 @@ namespace ShortCourseTrainingSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap mdi_password {
+            get {
+                object obj = ResourceManager.GetObject("mdi_password", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mdi_password__1_ {
+            get {
+                object obj = ResourceManager.GetObject("mdi_password (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap mdi_teacher__1_ {
             get {
                 object obj = ResourceManager.GetObject("mdi_teacher (1)", resourceCulture);
@@ -226,6 +276,16 @@ namespace ShortCourseTrainingSystem.Properties {
         internal static System.Drawing.Bitmap mdi_user_circle__1_ {
             get {
                 object obj = ResourceManager.GetObject("mdi_user-circle (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ph_student_bold {
+            get {
+                object obj = ResourceManager.GetObject("ph_student-bold", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -266,6 +326,36 @@ namespace ShortCourseTrainingSystem.Properties {
         internal static System.Drawing.Bitmap ri_logout_circle_line {
             get {
                 object obj = ResourceManager.GetObject("ri_logout-circle-line", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap solar_user_bold {
+            get {
+                object obj = ResourceManager.GetObject("solar_user-bold", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap solar_user_bold__1_ {
+            get {
+                object obj = ResourceManager.GetObject("solar_user-bold (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap undraw_Load_more_re_482p {
+            get {
+                object obj = ResourceManager.GetObject("undraw_Load_more_re_482p", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

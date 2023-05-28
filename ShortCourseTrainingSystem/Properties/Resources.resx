@@ -154,14 +154,23 @@
   <data name="Vector (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Vector (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="material-symbols_patient-list" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\material-symbols_patient-list.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="mdi_user-circle (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mdi_user-circle (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fluent-mdl2_money" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fluent-mdl2_money.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="solar_user-bold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\solar_user-bold.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="JONGREAN (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\JONGREAN (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="mdi_user-circle (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mdi_user-circle (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Group 8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="undraw_Load_more_re_482p" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\undraw_Load_more_re_482p.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="mdi_account-student" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mdi_account-student.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,8 +178,17 @@
   <data name="mdi_teacher (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mdi_teacher (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="mdi_password (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mdi_password (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="JONGREAN" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\JONGREAN.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="solar_user-bold (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\solar_user-bold (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mdi_password" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mdi_password.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="mdi_user-circle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mdi_user-circle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -181,11 +199,17 @@
   <data name="JONGREAN1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\JONGREAN1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="JONGREAN (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\JONGREAN (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Vector (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Vector (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ic_round-dashboard" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic_round-dashboard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri_logout-circle-line" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ri_logout-circle-line.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="iconamoon_invoice-fill" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconamoon_invoice-fill.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -193,13 +217,16 @@
   <data name="Vector (5)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Vector (5).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ri_logout-circle-line" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ri_logout-circle-line.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="material-symbols_patient-list" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\material-symbols_patient-list.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="undraw_Login_re_4vu2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\undraw_Login_re_4vu2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="JONGREAN (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\JONGREAN (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="undraw_Login_re_4vu2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\undraw_Login_re_4vu2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ph_student-bold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ph_student-bold.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
