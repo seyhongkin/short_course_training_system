@@ -57,3 +57,4 @@ D:\Class\C#\Year2\ShortCourseTrainingSystem\ShortCourseTrainingSystem\bin\Debug\
 D:\Class\C#\Year2\ShortCourseTrainingSystem\ShortCourseTrainingSystem\obj\Debug\ShortCourseTrainingSystem.csproj.Fody.CopyLocal.cache
 D:\Class\C#\Year2\ShortCourseTrainingSystem\ShortCourseTrainingSystem\obj\Debug\ShortCourseTrainingSystem.csproj.CopyComplete
 D:\Class\C#\Year2\ShortCourseTrainingSystem\ShortCourseTrainingSystem\obj\Debug\ShortCourseTrainingSystem.Forms.Dialog.CreateDialog.resources
+D:\Class\C#\Year2\ShortCourseTrainingSystem\ShortCourseTrainingSystem\obj\Debug\ShortCourseTrainingSystem.Forms.Dialog.TeacherDialog.resources
