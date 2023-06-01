@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ShortCourseTrainingSystem.Forms.Display
+namespace ShortCourseTrainingSystem.Forms.Dialog
 {
-    public partial class ProfileForm : Form
+    public partial class StudentDialog : Form
     {
-        public ProfileForm()
+        public StudentDialog()
         {
             InitializeComponent();
+        }
+
+        private void btnCreate_Click(object sender, EventArgs e)
+        {
+            DialogResult = DialogResult.OK;
         }
     }
 }

@@ -17,7 +17,6 @@ D:\Class\C#\Year2\ShortCourseTrainingSystem\ShortCourseTrainingSystem\obj\Debug\
 D:\Class\C#\Year2\ShortCourseTrainingSystem\ShortCourseTrainingSystem\obj\Debug\ShortCourseTrainingSystem.Forms.PaymentForm.resources
 D:\Class\C#\Year2\ShortCourseTrainingSystem\ShortCourseTrainingSystem\obj\Debug\ShortCourseTrainingSystem.Forms.Display.AboutForm.resources
 D:\Class\C#\Year2\ShortCourseTrainingSystem\ShortCourseTrainingSystem\obj\Debug\ShortCourseTrainingSystem.Forms.Display.CourseForm.resources
-D:\Class\C#\Year2\ShortCourseTrainingSystem\ShortCourseTrainingSystem\obj\Debug\ShortCourseTrainingSystem.Forms.Display.ProfileForm.resources
 D:\Class\C#\Year2\ShortCourseTrainingSystem\ShortCourseTrainingSystem\obj\Debug\ShortCourseTrainingSystem.Forms.Display.RoomForm.resources
 D:\Class\C#\Year2\ShortCourseTrainingSystem\ShortCourseTrainingSystem\obj\Debug\ShortCourseTrainingSystem.Forms.Display.StudentForm.resources
 D:\Class\C#\Year2\ShortCourseTrainingSystem\ShortCourseTrainingSystem\obj\Debug\ShortCourseTrainingSystem.Forms.Display.TeacherForm.resources
@@ -58,3 +57,7 @@ D:\Class\C#\Year2\ShortCourseTrainingSystem\ShortCourseTrainingSystem\obj\Debug\
 D:\Class\C#\Year2\ShortCourseTrainingSystem\ShortCourseTrainingSystem\obj\Debug\ShortCourseTrainingSystem.csproj.CopyComplete
 D:\Class\C#\Year2\ShortCourseTrainingSystem\ShortCourseTrainingSystem\obj\Debug\ShortCourseTrainingSystem.Forms.Dialog.CreateDialog.resources
 D:\Class\C#\Year2\ShortCourseTrainingSystem\ShortCourseTrainingSystem\obj\Debug\ShortCourseTrainingSystem.Forms.Dialog.TeacherDialog.resources
+D:\Class\C#\Year2\ShortCourseTrainingSystem\ShortCourseTrainingSystem\obj\Debug\ShortCourseTrainingSystem.Forms.Dialog.StudentDialog.resources
+D:\Class\C#\Year2\ShortCourseTrainingSystem\ShortCourseTrainingSystem\obj\Debug\ShortCourseTrainingSystem.Forms.Dialog.RoomDialog.resources
+D:\Class\C#\Year2\ShortCourseTrainingSystem\ShortCourseTrainingSystem\obj\Debug\ShortCourseTrainingSystem.Forms.Display.ClassForm.resources
+D:\Class\C#\Year2\ShortCourseTrainingSystem\ShortCourseTrainingSystem\obj\Debug\ShortCourseTrainingSystem.Forms.Dialog.ClassDialog.resources

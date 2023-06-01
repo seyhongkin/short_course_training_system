@@ -36,6 +36,7 @@
             this.pnUser = new System.Windows.Forms.Panel();
             this.lbUserName = new System.Windows.Forms.Label();
             this.lbPosition = new System.Windows.Forms.Label();
+            this.pnLoadForm = new System.Windows.Forms.Panel();
             this.picUser = new OvalPictureBox();
             this.miLogout = new System.Windows.Forms.Button();
             this.miAbout = new System.Windows.Forms.Button();
@@ -47,7 +48,6 @@
             this.miTeacher = new System.Windows.Forms.Button();
             this.miDashboard = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pnLoadForm = new System.Windows.Forms.Panel();
             this.pnMenu.SuspendLayout();
             this.panelMenu.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -151,6 +151,14 @@
             this.lbPosition.Text = "Cashier";
             this.lbPosition.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // pnLoadForm
+            // 
+            this.pnLoadForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnLoadForm.Location = new System.Drawing.Point(206, 54);
+            this.pnLoadForm.Name = "pnLoadForm";
+            this.pnLoadForm.Size = new System.Drawing.Size(671, 484);
+            this.pnLoadForm.TabIndex = 2;
+            // 
             // picUser
             // 
             this.picUser.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
@@ -219,7 +227,7 @@
             this.miProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.miProfile.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.miProfile.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.miProfile.Image = global::ShortCourseTrainingSystem.Properties.Resources.ic_round_dashboard__1_;
+            this.miProfile.Image = global::ShortCourseTrainingSystem.Properties.Resources.simple_icons_googleclassroom__1_;
             this.miProfile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.miProfile.Location = new System.Drawing.Point(0, 276);
             this.miProfile.Margin = new System.Windows.Forms.Padding(2);
@@ -227,7 +235,7 @@
             this.miProfile.Padding = new System.Windows.Forms.Padding(15, 6, 0, 6);
             this.miProfile.Size = new System.Drawing.Size(206, 46);
             this.miProfile.TabIndex = 4;
-            this.miProfile.Text = "          Profile";
+            this.miProfile.Text = "          Class";
             this.miProfile.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.miProfile.UseVisualStyleBackColor = true;
             this.miProfile.Click += new System.EventHandler(this.miProfile_Click);
@@ -376,14 +384,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
-            // 
-            // pnLoadForm
-            // 
-            this.pnLoadForm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnLoadForm.Location = new System.Drawing.Point(206, 54);
-            this.pnLoadForm.Name = "pnLoadForm";
-            this.pnLoadForm.Size = new System.Drawing.Size(671, 484);
-            this.pnLoadForm.TabIndex = 2;
             // 
             // MainForm
             // 

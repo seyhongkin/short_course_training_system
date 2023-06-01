@@ -134,10 +134,10 @@ namespace ShortCourseTrainingSystem
             pnMenuHighLight.Top = miProfile.Top;
             pnMenuHighLight.Left = miProfile.Left;
             pnMenuHighLight.Height = miProfile.Height;
-            lbTabName.Text = "Profile";
+            lbTabName.Text = "Classes";
 
             this.pnLoadForm.Controls.Clear();
-            ProfileForm profilefrm = new ProfileForm() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            ClassForm profilefrm = new ClassForm() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             profilefrm.FormBorderStyle = FormBorderStyle.None;
             this.pnLoadForm.Controls.Add(profilefrm);
             profilefrm.Show();

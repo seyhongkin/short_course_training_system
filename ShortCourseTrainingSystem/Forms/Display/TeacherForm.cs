@@ -13,17 +13,15 @@ namespace ShortCourseTrainingSystem.Forms.Display
 {
     public partial class TeacherForm : Form
     {
-        private List<Dictionary<string, string>> teachers;
         public TeacherForm()
         {
             InitializeComponent();
-            teachers = DataStore.teachers;
         }
 
         private void TeacherForm_Load(object sender, EventArgs e)
         {
             dgvTeacher.Rows.Clear();
-            foreach (Dictionary<string, string> teacher in teachers)
+            foreach (Dictionary<string, string> teacher in DataStore.teachers)
             {
                 dgvTeacher.Rows.Add(teacher["id"], teacher["name"], teacher["dob"], teacher["gender"], teacher["maritalStatus"], teacher["hiredAt"], teacher["tel"], teacher["email"], teacher["createAt"], teacher["updateAt"]);
             }
@@ -47,7 +45,7 @@ namespace ShortCourseTrainingSystem.Forms.Display
                 string createAt = DateTime.Now.ToString();
 
                 long id = -1;
-                foreach (Dictionary<string, string> t in teachers)
+                foreach (Dictionary<string, string> t in DataStore.teachers)
                 {
                     long tId = long.Parse(t["id"]);
                     if (tId > id)
@@ -71,7 +69,7 @@ namespace ShortCourseTrainingSystem.Forms.Display
                     {"updateAt","" }
                 };
 
-                teachers.Add(teacher);
+                DataStore.teachers.Add(teacher);
 
                 //update ui
                 TeacherForm_Load(null, null);
@@ -114,7 +112,7 @@ namespace ShortCourseTrainingSystem.Forms.Display
                 string updateAt = DateTime.Now.ToString();
 
                 //update teacher list
-                foreach(Dictionary<string,string> t in teachers)
+                foreach(Dictionary<string,string> t in DataStore.teachers)
                 {
                     if(id == t["id"])
                     {
@@ -150,11 +148,11 @@ namespace ShortCourseTrainingSystem.Forms.Display
 
             string id = row.Cells[0].Value.ToString();
 
-            foreach(Dictionary<string,string> t in teachers)
+            foreach(Dictionary<string,string> t in DataStore.teachers)
             {
                 if(id == t["id"])
                 {
-                    teachers.Remove(t);
+                    DataStore.teachers.Remove(t);
 
                     //update ui
                     TeacherForm_Load(null, null);

@@ -13,17 +13,15 @@ namespace ShortCourseTrainingSystem.Forms.Display
 {
     public partial class CourseForm : Form
     {
-        private List<Dictionary<string, string>> courses;
         public CourseForm()
         {
             InitializeComponent();
-            courses = DataStore.courses;
         }
         
         private void CourseForm_Load(object sender, EventArgs e)
         {
             dgvCourse.Rows.Clear();
-            foreach (Dictionary<String, String> course in courses)
+            foreach (Dictionary<String, String> course in DataStore.courses)
             {
                 dgvCourse.Rows.Add(course["id"], course["name"], course["period"], course["price"], course["monthlyPrice"], course["createAt"], course["updateAt"]);
             }
@@ -36,7 +34,7 @@ namespace ShortCourseTrainingSystem.Forms.Display
             if (result == DialogResult.OK)
             {
                 long id = -1;
-                foreach (Dictionary<String, String> c in courses)
+                foreach (Dictionary<String, String> c in DataStore.courses)
                 {
                     long maxId = long.Parse(c["id"]);
                     if (id < maxId)
@@ -56,7 +54,7 @@ namespace ShortCourseTrainingSystem.Forms.Display
                     {"createAt",createAt },
                     {"updateAt","" }
                 };
-                courses.Add(course);
+                DataStore.courses.Add(course);
                 dgvCourse.Rows.Add(course["id"], course["name"], course["period"], course["price"], course["monthlyPrice"], course["createAt"], "");
             }
         }
@@ -82,7 +80,7 @@ namespace ShortCourseTrainingSystem.Forms.Display
             if(result == DialogResult.OK)
             {
                 String createAt = "";
-                foreach (Dictionary<String, String> c in courses)
+                foreach (Dictionary<String, String> c in DataStore.courses)
                 {
                     if (id == c["id"].ToString())
                     {
@@ -101,7 +99,7 @@ namespace ShortCourseTrainingSystem.Forms.Display
                 };
 
                 //update list dictionaries
-                foreach(Dictionary<String,String> c in courses)
+                foreach(Dictionary<String,String> c in DataStore.courses)
                 {
                     if (c["id"].ToString() == id)
                     {
@@ -132,11 +130,11 @@ namespace ShortCourseTrainingSystem.Forms.Display
             if(result == DialogResult.Yes)
             {
                 //update list dictionaries
-                foreach (Dictionary<String, String> c in courses)
+                foreach (Dictionary<String, String> c in DataStore.courses)
                 {
                     if (c["id"].ToString() == id)
                     {
-                        courses.Remove(c);
+                        DataStore.courses.Remove(c);
 
                         //update ui
                         CourseForm_Load(null, null);
