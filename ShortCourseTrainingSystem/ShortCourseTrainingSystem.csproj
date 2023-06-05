@@ -224,6 +224,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataStore.cs" />
+    <Compile Include="Forms\Dialog\AttendaceDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialog\AttendaceDialog.Designer.cs">
+      <DependentUpon>AttendaceDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialog\AttendanceDetailDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialog\AttendanceDetailDialog.Designer.cs">
+      <DependentUpon>AttendanceDetailDialog.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Dialog\ClassDialog.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -235,6 +247,18 @@
     </Compile>
     <Compile Include="Forms\Dialog\CreateDialog.Designer.cs">
       <DependentUpon>CreateDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialog\PaymentDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialog\PaymentDialog.Designer.cs">
+      <DependentUpon>PaymentDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialog\RecordAttendanceDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialog\RecordAttendanceDialog.Designer.cs">
+      <DependentUpon>RecordAttendanceDialog.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Dialog\RoomDialog.cs">
       <SubType>Form</SubType>
@@ -337,11 +361,23 @@
     <Compile Include="UI\OvalPictureBox.cs">
       <SubType>Component</SubType>
     </Compile>
+    <EmbeddedResource Include="Forms\Dialog\AttendaceDialog.resx">
+      <DependentUpon>AttendaceDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialog\AttendanceDetailDialog.resx">
+      <DependentUpon>AttendanceDetailDialog.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Dialog\ClassDialog.resx">
       <DependentUpon>ClassDialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Dialog\CreateDialog.resx">
       <DependentUpon>CreateDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialog\PaymentDialog.resx">
+      <DependentUpon>PaymentDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialog\RecordAttendanceDialog.resx">
+      <DependentUpon>RecordAttendanceDialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Dialog\RoomDialog.resx">
       <DependentUpon>RoomDialog.cs</DependentUpon>

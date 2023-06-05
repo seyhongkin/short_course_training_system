@@ -8,19 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ShortCourseTrainingSystem.Forms
+namespace ShortCourseTrainingSystem.Forms.Dialog
 {
-    public partial class DashboardForm : Form
+    public partial class RecordAttendanceDialog : Form
     {
-        public DashboardForm()
+        public RecordAttendanceDialog()
         {
             InitializeComponent();
         }
 
-        private void DashboardForm_Load(object sender, EventArgs e)
+        private void btnSubmit_Click(object sender, EventArgs e)
         {
-            int studentNum = DataStore.students.Count;
-            lbStudent.Text = studentNum.ToString();
+            DialogResult = DialogResult.OK;
         }
     }
 }

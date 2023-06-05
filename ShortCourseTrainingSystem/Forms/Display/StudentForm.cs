@@ -112,13 +112,13 @@ namespace ShortCourseTrainingSystem.Forms.Display
 
             DataGridViewRow row = dgvStudent.SelectedRows[0];
             string id = row.Cells[0].Value.ToString();
-            DialogResult result = MessageBox.Show($"Are you sure you want to delete student name '{row.Cells[1].Value.ToString()}'?","Delete",MessageBoxButtons.YesNo,MessageBoxIcon.Question);
+            DialogResult result = MessageBox.Show($"Are you sure you want to delete student name '{row.Cells[1].Value.ToString()}'?", "Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result != DialogResult.Yes)
             {
                 return;
             }
 
-            foreach (Dictionary<string,string> s in DataStore.students)
+            foreach (Dictionary<string, string> s in DataStore.students)
             {
                 if (s["id"] == id)
                 {
@@ -128,6 +128,101 @@ namespace ShortCourseTrainingSystem.Forms.Display
                     StudentForm_Load(null, null);
                     break;
                 }
+            }
+        }
+
+        private string getClassId(string cId, string time, string tId)
+        {
+            foreach (Dictionary<string, string> c in DataStore.classes)
+            {
+                if (c["courseId"] == cId && c["time"] == time && c["teacherId"] == tId)
+                {
+                    return c["id"];
+                }
+            }
+            return "";
+        }
+
+        private string getStudentId(string sName)
+        {
+            foreach (Dictionary<string, string> s in DataStore.students)
+            {
+                if (s["name"] == sName)
+                {
+                    return s["id"];
+                }
+            }
+            return "";
+        }
+
+        private string getTeacherId(string tName)
+        {
+            foreach (Dictionary<string, string> t in DataStore.teachers)
+            {
+                if (t["name"] == tName)
+                {
+                    return t["id"];
+                }
+            }
+            return "";
+        }
+
+        private string getCourseId(string cName)
+        {
+            foreach (Dictionary<string, string> c in DataStore.courses)
+            {
+                if (c["name"] == cName)
+                {
+                    return c["id"];
+                }
+            }
+            return "";
+        }
+
+        private void btnPay_Click(object sender, EventArgs e)
+        {
+            if (dgvStudent.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("No row selected");
+                return;
+            }
+            DataGridViewRow row = dgvStudent.SelectedRows[0];
+            string id = row.Cells[0].Value.ToString();
+            PaymentDialog pDialog = new PaymentDialog();
+            pDialog.txtStudent.Text = row.Cells[1].Value.ToString();
+            pDialog.txtStudent.Enabled = false;
+
+            DialogResult result = pDialog.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                string studentId = getStudentId(pDialog.txtStudent.Text);
+                string courseId = getCourseId(pDialog.cbCourse.Text);
+                string time = pDialog.cbTime.Text;
+                string teacherId = getTeacherId(pDialog.cbTeacher.Text);
+                string classId = getClassId(courseId, time, teacherId);
+                long pId = -1;
+                foreach(Dictionary<string,string> p in DataStore.payments)
+                {
+                    long payId = long.Parse(p["id"]);
+                    if (pId < payId)
+                    {
+                        pId = payId;
+                    }
+                }
+
+                Dictionary<string, string> payment = new Dictionary<string, string>()
+                {
+                    {"id", (++pId).ToString() },
+                    {"stId",studentId },
+                    {"classId",classId },
+                    {"price",pDialog.txtPrice.Text },
+                    {"discount",pDialog.cbDiscount.Text },
+                    {"paidAt", DateTime.Now.ToString() },
+                    {"rep","" }
+                };
+
+                DataStore.payments.Add(payment);
+
             }
         }
     }

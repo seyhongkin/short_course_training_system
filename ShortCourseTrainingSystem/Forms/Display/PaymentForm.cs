@@ -60,7 +60,7 @@ namespace ShortCourseTrainingSystem.Forms
             {
                 if (cId == c["id"])
                 {
-                    return getCourseName(c["courseId"]) + " " + getRoomName(c["roomId"]);
+                    return getCourseName(c["courseId"]) + " " + getRoomName(c["roomId"]) + " " + c["time"];
                 }
             }
             return "";

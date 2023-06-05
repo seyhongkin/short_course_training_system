@@ -200,5 +200,31 @@ namespace ShortCourseTrainingSystem.Forms.Display
                 }
             }
         }
+
+        public static Dictionary<string,string> getStudent(string stId)
+        {
+            foreach(Dictionary<string,string> s in DataStore.students)
+            {
+                if(stId == s["id"])
+                {
+                    return s;
+                }
+            }
+            return null;
+        }
+
+        private void btnAttendance_Click(object sender, EventArgs e)
+        {
+            if(dgvClass.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("No row selected");
+                return;
+            }
+            DataGridViewRow row = dgvClass.SelectedRows[0];
+            string id = row.Cells[0].Value.ToString();
+
+            AttendaceDialog attendace = new AttendaceDialog(id);
+            attendace.Show();
+        }
     }
 }

@@ -195,7 +195,7 @@ namespace ShortCourseTrainingSystem
                 {"stId","1" },
                 {"classId","1" },
                 {"price","10" },
-                {"discount","0" },
+                {"discount","0%" },
                 {"paidAt","5/21/2023 10:19:34 PM" },
                 {"rep","SOPHEAK" }
             },
@@ -205,7 +205,7 @@ namespace ShortCourseTrainingSystem
                 {"stId","2" },
                 {"classId","1" },
                 {"price","10" },
-                {"discount","0" },
+                {"discount","0%" },
                 {"paidAt","5/21/2023 1:19:34 PM" },
                 {"rep","SOPHEAK" }
             },
@@ -215,9 +215,28 @@ namespace ShortCourseTrainingSystem
                 {"stId","3" },
                 {"classId","1" },
                 {"price","10" },
-                {"discount","0" },
+                {"discount","0%" },
                 {"paidAt","5/23/2023 9:19:34 AM" },
                 {"rep","SOPHEAK" }
+            }
+        };
+        public static List<Dictionary<string, string>> attendance = new List<Dictionary<string, string>>()
+        {
+            new Dictionary<string, string>()
+            {
+                {"id","1" },
+                {"stId","1" },
+                {"classId","1" },
+                {"hasPermission","t" },
+                {"date","Thursday, June 1, 2023" },
+            },
+            new Dictionary<string, string>()
+            {
+                {"id","1" },
+                {"stId","2" },
+                {"classId","1" },
+                {"hasPermission","f" },
+                {"date","Friday, June 2, 2023" },
             }
         };
     }
