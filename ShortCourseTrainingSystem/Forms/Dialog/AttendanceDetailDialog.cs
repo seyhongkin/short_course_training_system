@@ -15,6 +15,11 @@ namespace ShortCourseTrainingSystem.Forms.Dialog
     {
         string cId;
         string sId;
+
+        public AttendanceDetailDialog()
+        {
+            InitializeComponent();
+        }
         public AttendanceDetailDialog(string cId, string stId)
         {
             InitializeComponent();
@@ -22,30 +27,40 @@ namespace ShortCourseTrainingSystem.Forms.Dialog
             this.sId = stId;
         }
 
-        private Dictionary<string, string> getAttendance(string cid, string sid)
+        private List<Dictionary<string, string>> getAttendance(string cid, string sid)
         {
+            List<Dictionary<string, string>> listAtt = new List<Dictionary<string, string>>();
             foreach (Dictionary<string, string> a in DataStore.attendance)
             {
                 if (cId == a["classId"] && sId == a["stId"])
                 {
-                    return a;
+                    listAtt.Add(a);
                 }
             }
-            return null;
+            return listAtt;
         }
 
 
         private void AttendanceDetailDialog_Load(object sender, EventArgs e)
         {
+            if(sId == null || cId == null)
+            {
+                long tAttId = 0;
+                foreach(Dictionary<string,string> tAtt in DataStore.teacherAttendance)
+                {
+                    dgvAttDetail.Rows.Add(++tAttId, tAtt["date"], tAtt["hasPermission"] == "t" ? false : true, tAtt["hasPermission"] == "t" ? true : false);
+                }
+                return;
+            }   
             int id = 0;
             foreach (Dictionary<string, string> a in DataStore.attendance)
             {
                 if (cId == a["classId"] && sId == a["stId"])
                 {
-                    Dictionary<string, string> att = getAttendance(cId, sId);
-                    dgvAttDetail.Rows.Add(++id, att["date"], att["hasPermission"] == "t" ? false : true, att["hasPermission"] == "t" ? true : false);
+                    dgvAttDetail.Rows.Add(++id, a["date"], a["hasPermission"] == "t" ? false : true, a["hasPermission"] == "t" ? true : false);
                 }
             }
+            
         }
     }
 }

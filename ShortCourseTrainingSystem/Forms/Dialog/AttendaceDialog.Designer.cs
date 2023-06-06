@@ -30,12 +30,13 @@
         {
             this.dgvStudentList = new System.Windows.Forms.DataGridView();
             this.cbAttType = new System.Windows.Forms.ComboBox();
+            this.Detail = new System.Windows.Forms.Button();
+            this.btnAttendance = new System.Windows.Forms.Button();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Detail = new System.Windows.Forms.Button();
-            this.btnAttendance = new System.Windows.Forms.Button();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStudentList)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,10 +50,12 @@
             this.Column1,
             this.Column2,
             this.Column3,
-            this.Column4});
+            this.Column4,
+            this.Column5});
             this.dgvStudentList.Location = new System.Drawing.Point(12, 73);
             this.dgvStudentList.Name = "dgvStudentList";
             this.dgvStudentList.RowHeadersVisible = false;
+            this.dgvStudentList.RowHeadersWidth = 51;
             this.dgvStudentList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvStudentList.Size = new System.Drawing.Size(764, 319);
             this.dgvStudentList.TabIndex = 0;
@@ -66,31 +69,9 @@
             "Student"});
             this.cbAttType.Location = new System.Drawing.Point(12, 13);
             this.cbAttType.Name = "cbAttType";
-            this.cbAttType.Size = new System.Drawing.Size(121, 28);
+            this.cbAttType.Size = new System.Drawing.Size(121, 33);
             this.cbAttType.TabIndex = 1;
             this.cbAttType.SelectedIndexChanged += new System.EventHandler(this.cbAttType_SelectedIndexChanged);
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "ID";
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 60;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Student Name";
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 170;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Absence";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Permission";
-            this.Column4.Name = "Column4";
             // 
             // Detail
             // 
@@ -122,9 +103,44 @@
             this.btnAttendance.UseVisualStyleBackColor = false;
             this.btnAttendance.Click += new System.EventHandler(this.btnAttendance_Click);
             // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "ID";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 60;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Student Name";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 170;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Absence";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.Width = 125;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Permission";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 125;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Total Absence";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            this.Column5.Width = 170;
+            // 
             // AttendaceDialog
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(788, 404);
             this.Controls.Add(this.btnAttendance);
@@ -145,11 +161,12 @@
 
         private System.Windows.Forms.DataGridView dgvStudentList;
         private System.Windows.Forms.ComboBox cbAttType;
+        private System.Windows.Forms.Button Detail;
+        private System.Windows.Forms.Button btnAttendance;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.Button Detail;
-        private System.Windows.Forms.Button btnAttendance;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
     }
 }

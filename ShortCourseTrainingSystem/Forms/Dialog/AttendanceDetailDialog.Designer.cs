@@ -49,6 +49,7 @@
             this.dgvAttDetail.Location = new System.Drawing.Point(0, 0);
             this.dgvAttDetail.Name = "dgvAttDetail";
             this.dgvAttDetail.RowHeadersVisible = false;
+            this.dgvAttDetail.RowHeadersWidth = 51;
             this.dgvAttDetail.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvAttDetail.Size = new System.Drawing.Size(600, 349);
             this.dgvAttDetail.TabIndex = 1;
@@ -56,32 +57,38 @@
             // Column1
             // 
             this.Column1.HeaderText = "ID";
+            this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
             this.Column1.Width = 60;
             // 
             // Column2
             // 
             this.Column2.HeaderText = "Date";
+            this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
-            this.Column2.Width = 200;
+            this.Column2.Width = 250;
             // 
             // Column3
             // 
             this.Column3.HeaderText = "Absence";
+            this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
             this.Column3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.Column3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Column3.Width = 125;
             // 
             // Column4
             // 
             this.Column4.HeaderText = "Permission";
+            this.Column4.MinimumWidth = 6;
             this.Column4.Name = "Column4";
             this.Column4.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.Column4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Column4.Width = 125;
             // 
             // AttendanceDetailDialog
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 349);
             this.Controls.Add(this.dgvAttDetail);

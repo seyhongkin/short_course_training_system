@@ -232,11 +232,36 @@ namespace ShortCourseTrainingSystem
             },
             new Dictionary<string, string>()
             {
+                {"id","3" },
+                {"stId","1" },
+                {"classId","1" },
+                {"hasPermission","t" },
+                {"date","Friday, June 2, 2023" },
+            },
+            new Dictionary<string, string>()
+            {
                 {"id","1" },
                 {"stId","2" },
                 {"classId","1" },
                 {"hasPermission","f" },
                 {"date","Friday, June 2, 2023" },
+            }
+        };
+        public static List<Dictionary<string, string>> teacherAttendance = new List<Dictionary<string, string>>()
+        {
+            new Dictionary<string, string>()
+            {
+                {"id","1" },
+                {"classId","1" },
+                {"hasPermission","f" },
+                {"date","Wednesday, May 31, 2023" },
+            },
+            new Dictionary<string, string>()
+            {
+                {"id","3" },
+                {"classId","1" },
+                {"hasPermission","t" },
+                {"date","Monday, June 5, 2023" },
             }
         };
     }
