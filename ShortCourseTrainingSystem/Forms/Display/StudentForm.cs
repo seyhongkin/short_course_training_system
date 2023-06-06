@@ -221,8 +221,26 @@ namespace ShortCourseTrainingSystem.Forms.Display
                     {"rep","" }
                 };
 
-                DataStore.payments.Add(payment);
+                long scId = -1;
+                foreach(Dictionary<string,string> s in DataStore.score)
+                {
+                    long sId = long.Parse(s["id"]);
+                    if(scId < sId)
+                    {
+                        scId = sId;
+                    }
+                }
 
+                Dictionary<string,string> score = new Dictionary<string, string>()
+                {
+                    {"id",scId.ToString() },
+                    {"classId",classId },
+                    {"stId",studentId },
+                    {"score","0" },
+                };
+
+                DataStore.payments.Add(payment);
+                DataStore.score.Add(score);
             }
         }
     }

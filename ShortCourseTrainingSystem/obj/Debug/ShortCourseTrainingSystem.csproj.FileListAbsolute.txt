@@ -65,3 +65,4 @@ D:\Class\C#\Year2\ShortCourseTrainingSystem\ShortCourseTrainingSystem\obj\Debug\
 D:\Class\C#\Year2\ShortCourseTrainingSystem\ShortCourseTrainingSystem\obj\Debug\ShortCourseTrainingSystem.Forms.Dialog.AttendaceDialog.resources
 D:\Class\C#\Year2\ShortCourseTrainingSystem\ShortCourseTrainingSystem\obj\Debug\ShortCourseTrainingSystem.Forms.Dialog.AttendanceDetailDialog.resources
 D:\Class\C#\Year2\ShortCourseTrainingSystem\ShortCourseTrainingSystem\obj\Debug\ShortCourseTrainingSystem.Forms.Dialog.RecordAttendanceDialog.resources
+D:\Class\C#\Year2\ShortCourseTrainingSystem\ShortCourseTrainingSystem\obj\Debug\ShortCourseTrainingSystem.Forms.Dialog.ExamDialog.resources

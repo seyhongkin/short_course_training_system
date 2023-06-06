@@ -19,6 +19,17 @@ namespace ShortCourseTrainingSystem.Forms.Dialog
 
         private void btnPay_Click(object sender, EventArgs e)
         {
+            if (txtReturn.Text == "")
+            {
+                MessageBox.Show("No enough money!");
+                return;
+            }
+            double returnAmount = double.Parse(txtReturn.Text);
+            if(returnAmount < 0)
+            {
+                MessageBox.Show("Not enough money");
+                return;
+            } 
             DialogResult = DialogResult.OK;
             if (cbPrint.Checked)
             {
@@ -32,7 +43,7 @@ namespace ShortCourseTrainingSystem.Forms.Dialog
             {
                 if (cName == c["name"])
                 {
-                    return c["price"];
+                    return c["monthlyPrice"];
                 }
             }
             return "";

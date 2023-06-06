@@ -14,6 +14,8 @@ namespace ShortCourseTrainingSystem
             {
                 {"id","1" },
                 {"name","Microsoft Office" },
+                {"passedScore","25" },
+                {"fullScore","40" },
                 {"period","4month" },
                 {"price","38" },
                 {"monthlyPrice", "10"},
@@ -24,6 +26,8 @@ namespace ShortCourseTrainingSystem
             {
                 {"id","2" },
                 {"name","Chinese Level 1A" },
+                {"passedScore","25" },
+                {"fullScore","40" },
                 {"period","3month" },
                 {"price","35" },
                 {"monthlyPrice", "15"},
@@ -34,6 +38,8 @@ namespace ShortCourseTrainingSystem
             {
                 {"id","3" },
                 {"name","English Beginner" },
+                {"passedScore","25" },
+                {"fullScore","40" },
                 {"period","4month" },
                 {"price","38" },
                 {"monthlyPrice", "10"},
@@ -262,6 +268,30 @@ namespace ShortCourseTrainingSystem
                 {"classId","1" },
                 {"hasPermission","t" },
                 {"date","Monday, June 5, 2023" },
+            }
+        };
+        public static List<Dictionary<string, string>> score = new List<Dictionary<string, string>>()
+        {
+            new Dictionary<string, string>()
+            {
+                {"id","1" },
+                {"classId","1" },
+                {"stId","1" },
+                {"score","31" },
+            },
+            new Dictionary<string, string>()
+            {
+                {"id","2" },
+                {"classId","1" },
+                {"stId","2" },
+                {"score","38" },
+            },
+            new Dictionary<string, string>()
+            {
+                {"id","3" },
+                {"classId","1" },
+                {"stId","3" },
+                {"score","21" },
             }
         };
     }

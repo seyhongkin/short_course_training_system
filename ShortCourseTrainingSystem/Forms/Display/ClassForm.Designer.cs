@@ -78,6 +78,7 @@
             this.dgvClass.Location = new System.Drawing.Point(11, 64);
             this.dgvClass.Name = "dgvClass";
             this.dgvClass.RowHeadersVisible = false;
+            this.dgvClass.RowHeadersWidth = 51;
             this.dgvClass.RowTemplate.Height = 30;
             this.dgvClass.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvClass.Size = new System.Drawing.Size(733, 423);
@@ -86,41 +87,51 @@
             // Column1
             // 
             this.Column1.HeaderText = "ID";
+            this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
             this.Column1.Width = 80;
             // 
             // Column2
             // 
             this.Column2.HeaderText = "Course";
+            this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
             this.Column2.Width = 180;
             // 
             // Column8
             // 
             this.Column8.HeaderText = "Room";
+            this.Column8.MinimumWidth = 6;
             this.Column8.Name = "Column8";
+            this.Column8.Width = 125;
             // 
             // Column6
             // 
             this.Column6.HeaderText = "Teacher";
+            this.Column6.MinimumWidth = 6;
             this.Column6.Name = "Column6";
             this.Column6.Width = 140;
             // 
             // Column4
             // 
             this.Column4.HeaderText = "Time";
+            this.Column4.MinimumWidth = 6;
             this.Column4.Name = "Column4";
+            this.Column4.Width = 125;
             // 
             // Column5
             // 
             this.Column5.HeaderText = "Created at";
+            this.Column5.MinimumWidth = 6;
             this.Column5.Name = "Column5";
             this.Column5.Width = 150;
             // 
             // Column7
             // 
             this.Column7.HeaderText = "Update at";
+            this.Column7.MinimumWidth = 6;
             this.Column7.Name = "Column7";
+            this.Column7.Width = 125;
             // 
             // panel1
             // 
@@ -221,10 +232,11 @@
             this.btnExam.TabIndex = 4;
             this.btnExam.Text = "Exam";
             this.btnExam.UseVisualStyleBackColor = false;
+            this.btnExam.Click += new System.EventHandler(this.btnExam_Click);
             // 
             // ClassForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(756, 490);
             this.Controls.Add(this.dgvClass);

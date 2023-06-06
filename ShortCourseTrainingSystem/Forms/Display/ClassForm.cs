@@ -18,11 +18,11 @@ namespace ShortCourseTrainingSystem.Forms.Display
             InitializeComponent();
         }
 
-        
+
         private void ClassForm_Load(object sender, EventArgs e)
         {
             dgvClass.Rows.Clear();
-            foreach(Dictionary<string,string> c in DataStore.classes)
+            foreach (Dictionary<string, string> c in DataStore.classes)
             {
                 string courseName = "";
                 string roomName = "";
@@ -36,15 +36,15 @@ namespace ShortCourseTrainingSystem.Forms.Display
                     }
                 }
 
-                foreach (Dictionary<string,string> room in DataStore.rooms)
+                foreach (Dictionary<string, string> room in DataStore.rooms)
                 {
-                    if(room["id"] == c["roomId"])
+                    if (room["id"] == c["roomId"])
                     {
                         roomName = room["name"];
                         break;
                     }
                 }
-                foreach(Dictionary<string,string> teacher in DataStore.teachers)
+                foreach (Dictionary<string, string> teacher in DataStore.teachers)
                 {
                     if (teacher["id"] == c["teacherId"])
                     {
@@ -58,7 +58,7 @@ namespace ShortCourseTrainingSystem.Forms.Display
 
         private long getCourseId(string courseName)
         {
-            foreach(Dictionary<string,string> course in DataStore.courses)
+            foreach (Dictionary<string, string> course in DataStore.courses)
             {
                 if (course["name"] == courseName)
                 {
@@ -95,10 +95,10 @@ namespace ShortCourseTrainingSystem.Forms.Display
         private long sequenceId()
         {
             long id = -1;
-            foreach(Dictionary<string,string> c in DataStore.classes)
+            foreach (Dictionary<string, string> c in DataStore.classes)
             {
                 long cId = long.Parse(c["id"]);
-                if(cId > id)
+                if (cId > id)
                 {
                     id = cId;
                 }
@@ -111,7 +111,7 @@ namespace ShortCourseTrainingSystem.Forms.Display
         {
             ClassDialog cDialog = new ClassDialog();
             DialogResult result = cDialog.ShowDialog();
-            if(result == DialogResult.OK)
+            if (result == DialogResult.OK)
             {
                 long cId = getCourseId(cDialog.cbCourse.Text);
                 long rId = getRoomId(cDialog.cbRoom.Text);
@@ -138,7 +138,7 @@ namespace ShortCourseTrainingSystem.Forms.Display
         }
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            if(dgvClass.SelectedRows.Count == 0)
+            if (dgvClass.SelectedRows.Count == 0)
             {
                 MessageBox.Show("No row selected");
                 return;
@@ -154,9 +154,9 @@ namespace ShortCourseTrainingSystem.Forms.Display
             cDialog.cbRoom.SelectedItem = row.Cells[2].Value.ToString();
             cDialog.cbTeacher.SelectedItem = row.Cells[3].Value.ToString();
             DialogResult result = cDialog.ShowDialog();
-            if(result == DialogResult.OK)
+            if (result == DialogResult.OK)
             {
-                foreach(Dictionary<string,string> c in DataStore.classes)
+                foreach (Dictionary<string, string> c in DataStore.classes)
                 {
                     if (c["id"] == id)
                     {
@@ -184,11 +184,11 @@ namespace ShortCourseTrainingSystem.Forms.Display
             DataGridViewRow row = dgvClass.SelectedRows[0];
             string id = row.Cells[0].Value.ToString();
             DialogResult result = MessageBox.Show("Are you sure you want to delete this class?", "Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if(result != DialogResult.Yes)
+            if (result != DialogResult.Yes)
             {
                 return;
             }
-            foreach(Dictionary<string,string> c in DataStore.classes)
+            foreach (Dictionary<string, string> c in DataStore.classes)
             {
                 if (c["id"] == id)
                 {
@@ -201,11 +201,11 @@ namespace ShortCourseTrainingSystem.Forms.Display
             }
         }
 
-        public static Dictionary<string,string> getStudent(string stId)
+        public static Dictionary<string, string> getStudent(string stId)
         {
-            foreach(Dictionary<string,string> s in DataStore.students)
+            foreach (Dictionary<string, string> s in DataStore.students)
             {
-                if(stId == s["id"])
+                if (stId == s["id"])
                 {
                     return s;
                 }
@@ -215,7 +215,7 @@ namespace ShortCourseTrainingSystem.Forms.Display
 
         private void btnAttendance_Click(object sender, EventArgs e)
         {
-            if(dgvClass.SelectedRows.Count == 0)
+            if (dgvClass.SelectedRows.Count == 0)
             {
                 MessageBox.Show("No row selected");
                 return;
@@ -225,6 +225,21 @@ namespace ShortCourseTrainingSystem.Forms.Display
 
             AttendaceDialog attendace = new AttendaceDialog(id);
             attendace.Show();
+        }
+
+        private void btnExam_Click(object sender, EventArgs e)
+        {
+            if (dgvClass.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("No row selected");
+                return;
+            }
+
+            DataGridViewRow row = dgvClass.SelectedRows[0];
+            string cId = row.Cells[0].Value.ToString();
+            ExamDialog examDialog = new ExamDialog(cId);
+            examDialog.Show();
+
         }
     }
 }
