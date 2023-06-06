@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RecordAttendanceDialog));
             this.label1 = new System.Windows.Forms.Label();
             this.lbName = new System.Windows.Forms.Label();
             this.dtpAtt = new System.Windows.Forms.DateTimePicker();
@@ -40,7 +41,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(13, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 20);
+            this.label1.Size = new System.Drawing.Size(75, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Name: ";
             // 
@@ -49,7 +50,7 @@
             this.lbName.AutoSize = true;
             this.lbName.Location = new System.Drawing.Point(73, 18);
             this.lbName.Name = "lbName";
-            this.lbName.Size = new System.Drawing.Size(49, 20);
+            this.lbName.Size = new System.Drawing.Size(61, 25);
             this.lbName.TabIndex = 1;
             this.lbName.Text = "name";
             // 
@@ -57,7 +58,7 @@
             // 
             this.dtpAtt.Location = new System.Drawing.Point(13, 52);
             this.dtpAtt.Name = "dtpAtt";
-            this.dtpAtt.Size = new System.Drawing.Size(292, 26);
+            this.dtpAtt.Size = new System.Drawing.Size(292, 30);
             this.dtpAtt.TabIndex = 2;
             // 
             // cbHasPermission
@@ -65,7 +66,7 @@
             this.cbHasPermission.AutoSize = true;
             this.cbHasPermission.Location = new System.Drawing.Point(13, 89);
             this.cbHasPermission.Name = "cbHasPermission";
-            this.cbHasPermission.Size = new System.Drawing.Size(146, 24);
+            this.cbHasPermission.Size = new System.Drawing.Size(181, 29);
             this.cbHasPermission.TabIndex = 3;
             this.cbHasPermission.Text = "Have Permission";
             this.cbHasPermission.UseVisualStyleBackColor = true;
@@ -82,7 +83,7 @@
             // 
             // RecordAttendanceDialog
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(317, 181);
             this.Controls.Add(this.btnSubmit);
@@ -91,6 +92,7 @@
             this.Controls.Add(this.lbName);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "RecordAttendanceDialog";
             this.Text = "RecordAttendanceDialog";

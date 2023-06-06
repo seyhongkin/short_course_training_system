@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TeacherDialog));
             this.label1 = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
             this.dtpDob = new System.Windows.Forms.DateTimePicker();
@@ -50,7 +51,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 20);
+            this.label1.Size = new System.Drawing.Size(64, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Name";
             // 
@@ -58,14 +59,14 @@
             // 
             this.txtName.Location = new System.Drawing.Point(15, 46);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(309, 26);
+            this.txtName.Size = new System.Drawing.Size(309, 30);
             this.txtName.TabIndex = 1;
             // 
             // dtpDob
             // 
             this.dtpDob.Location = new System.Drawing.Point(16, 112);
             this.dtpDob.Name = "dtpDob";
-            this.dtpDob.Size = new System.Drawing.Size(308, 26);
+            this.dtpDob.Size = new System.Drawing.Size(308, 30);
             this.dtpDob.TabIndex = 2;
             // 
             // label2
@@ -73,7 +74,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(12, 87);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(99, 20);
+            this.label2.Size = new System.Drawing.Size(118, 25);
             this.label2.TabIndex = 3;
             this.label2.Text = "Date of Birth";
             // 
@@ -82,7 +83,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(12, 153);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 20);
+            this.label3.Size = new System.Drawing.Size(77, 25);
             this.label3.TabIndex = 4;
             this.label3.Text = "Gender";
             // 
@@ -95,7 +96,7 @@
             "Male"});
             this.cbGender.Location = new System.Drawing.Point(16, 177);
             this.cbGender.Name = "cbGender";
-            this.cbGender.Size = new System.Drawing.Size(135, 28);
+            this.cbGender.Size = new System.Drawing.Size(135, 33);
             this.cbGender.TabIndex = 5;
             // 
             // cbMaritalStatus
@@ -109,7 +110,7 @@
             "Single Parent"});
             this.cbMaritalStatus.Location = new System.Drawing.Point(167, 177);
             this.cbMaritalStatus.Name = "cbMaritalStatus";
-            this.cbMaritalStatus.Size = new System.Drawing.Size(157, 28);
+            this.cbMaritalStatus.Size = new System.Drawing.Size(157, 33);
             this.cbMaritalStatus.TabIndex = 7;
             // 
             // label4
@@ -117,7 +118,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(163, 153);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(107, 20);
+            this.label4.Size = new System.Drawing.Size(131, 25);
             this.label4.TabIndex = 6;
             this.label4.Text = "Marital Status";
             // 
@@ -126,7 +127,7 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(12, 342);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(67, 20);
+            this.label5.Size = new System.Drawing.Size(82, 25);
             this.label5.TabIndex = 9;
             this.label5.Text = "Hired At";
             // 
@@ -136,7 +137,7 @@
             this.dtpHiredAt.MaxDate = new System.DateTime(2100, 1, 1, 0, 0, 0, 0);
             this.dtpHiredAt.MinDate = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
             this.dtpHiredAt.Name = "dtpHiredAt";
-            this.dtpHiredAt.Size = new System.Drawing.Size(308, 26);
+            this.dtpHiredAt.Size = new System.Drawing.Size(308, 30);
             this.dtpHiredAt.TabIndex = 8;
             // 
             // btnCreate
@@ -153,7 +154,7 @@
             // 
             this.txtTel.Location = new System.Drawing.Point(17, 242);
             this.txtTel.Name = "txtTel";
-            this.txtTel.Size = new System.Drawing.Size(309, 26);
+            this.txtTel.Size = new System.Drawing.Size(309, 30);
             this.txtTel.TabIndex = 12;
             // 
             // lbTel
@@ -161,7 +162,7 @@
             this.lbTel.AutoSize = true;
             this.lbTel.Location = new System.Drawing.Point(14, 218);
             this.lbTel.Name = "lbTel";
-            this.lbTel.Size = new System.Drawing.Size(30, 20);
+            this.lbTel.Size = new System.Drawing.Size(40, 25);
             this.lbTel.TabIndex = 11;
             this.lbTel.Text = "Tel";
             // 
@@ -169,7 +170,7 @@
             // 
             this.txtEmail.Location = new System.Drawing.Point(17, 304);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(309, 26);
+            this.txtEmail.Size = new System.Drawing.Size(309, 30);
             this.txtEmail.TabIndex = 14;
             // 
             // lbEmail
@@ -177,13 +178,13 @@
             this.lbEmail.AutoSize = true;
             this.lbEmail.Location = new System.Drawing.Point(14, 280);
             this.lbEmail.Name = "lbEmail";
-            this.lbEmail.Size = new System.Drawing.Size(48, 20);
+            this.lbEmail.Size = new System.Drawing.Size(60, 25);
             this.lbEmail.TabIndex = 13;
             this.lbEmail.Text = "Email";
             // 
             // TeacherDialog
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(338, 469);
             this.Controls.Add(this.txtEmail);
@@ -202,6 +203,7 @@
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "TeacherDialog";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;

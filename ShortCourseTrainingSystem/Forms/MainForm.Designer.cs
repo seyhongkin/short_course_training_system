@@ -28,16 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.pnMenu = new System.Windows.Forms.Panel();
             this.pnMenuHighLight = new System.Windows.Forms.Panel();
-            this.panelMenu = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.lbTabName = new System.Windows.Forms.Label();
-            this.pnUser = new System.Windows.Forms.Panel();
-            this.lbUserName = new System.Windows.Forms.Label();
-            this.lbPosition = new System.Windows.Forms.Label();
-            this.pnLoadForm = new System.Windows.Forms.Panel();
-            this.miLogout = new System.Windows.Forms.Button();
             this.miAbout = new System.Windows.Forms.Button();
             this.miProfile = new System.Windows.Forms.Button();
             this.miRoom = new System.Windows.Forms.Button();
@@ -46,13 +39,21 @@
             this.miStudent = new System.Windows.Forms.Button();
             this.miTeacher = new System.Windows.Forms.Button();
             this.miDashboard = new System.Windows.Forms.Button();
+            this.panelMenu = new System.Windows.Forms.Panel();
+            this.miLogout = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.lbTabName = new System.Windows.Forms.Label();
+            this.pnUser = new System.Windows.Forms.Panel();
+            this.lbUserName = new System.Windows.Forms.Label();
+            this.lbPosition = new System.Windows.Forms.Label();
+            this.pnLoadForm = new System.Windows.Forms.Panel();
             this.picUser = new OvalPictureBox();
             this.pnMenu.SuspendLayout();
             this.panelMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.pnUser.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picUser)).BeginInit();
             this.SuspendLayout();
             // 
@@ -78,114 +79,10 @@
             // 
             this.pnMenuHighLight.BackColor = System.Drawing.Color.White;
             this.pnMenuHighLight.Location = new System.Drawing.Point(0, 6);
-            this.pnMenuHighLight.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnMenuHighLight.Margin = new System.Windows.Forms.Padding(4);
             this.pnMenuHighLight.Name = "pnMenuHighLight";
             this.pnMenuHighLight.Size = new System.Drawing.Size(7, 123);
             this.pnMenuHighLight.TabIndex = 2;
-            // 
-            // panelMenu
-            // 
-            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.panelMenu.Controls.Add(this.miLogout);
-            this.panelMenu.Controls.Add(this.pnMenu);
-            this.panelMenu.Controls.Add(this.pictureBox1);
-            this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelMenu.Location = new System.Drawing.Point(0, 0);
-            this.panelMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(275, 662);
-            this.panelMenu.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.SystemColors.Control;
-            this.panel2.Controls.Add(this.lbTabName);
-            this.panel2.Controls.Add(this.pnUser);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(275, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(894, 66);
-            this.panel2.TabIndex = 1;
-            // 
-            // lbTabName
-            // 
-            this.lbTabName.AutoSize = true;
-            this.lbTabName.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTabName.Location = new System.Drawing.Point(37, 27);
-            this.lbTabName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbTabName.Name = "lbTabName";
-            this.lbTabName.Size = new System.Drawing.Size(161, 36);
-            this.lbTabName.TabIndex = 1;
-            this.lbTabName.Text = "Dashboard";
-            // 
-            // pnUser
-            // 
-            this.pnUser.Controls.Add(this.lbUserName);
-            this.pnUser.Controls.Add(this.picUser);
-            this.pnUser.Controls.Add(this.lbPosition);
-            this.pnUser.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.pnUser.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnUser.Location = new System.Drawing.Point(607, 0);
-            this.pnUser.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.pnUser.Name = "pnUser";
-            this.pnUser.Size = new System.Drawing.Size(287, 66);
-            this.pnUser.TabIndex = 0;
-            // 
-            // lbUserName
-            // 
-            this.lbUserName.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbUserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.lbUserName.Location = new System.Drawing.Point(0, 9);
-            this.lbUserName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbUserName.Name = "lbUserName";
-            this.lbUserName.Size = new System.Drawing.Size(199, 25);
-            this.lbUserName.TabIndex = 4;
-            this.lbUserName.Text = "Phol Somnang";
-            this.lbUserName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // lbPosition
-            // 
-            this.lbPosition.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbPosition.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.lbPosition.Location = new System.Drawing.Point(0, 31);
-            this.lbPosition.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbPosition.Name = "lbPosition";
-            this.lbPosition.Size = new System.Drawing.Size(199, 20);
-            this.lbPosition.TabIndex = 5;
-            this.lbPosition.Text = "Cashier";
-            this.lbPosition.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // pnLoadForm
-            // 
-            this.pnLoadForm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnLoadForm.Location = new System.Drawing.Point(275, 66);
-            this.pnLoadForm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.pnLoadForm.Name = "pnLoadForm";
-            this.pnLoadForm.Size = new System.Drawing.Size(894, 596);
-            this.pnLoadForm.TabIndex = 2;
-            // 
-            // miLogout
-            // 
-            this.miLogout.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.miLogout.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.miLogout.FlatAppearance.BorderSize = 0;
-            this.miLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.miLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.miLogout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(46)))));
-            this.miLogout.Image = global::ShortCourseTrainingSystem.Properties.Resources.Vector__3_;
-            this.miLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.miLogout.Location = new System.Drawing.Point(0, 605);
-            this.miLogout.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.miLogout.Name = "miLogout";
-            this.miLogout.Padding = new System.Windows.Forms.Padding(20, 7, 0, 7);
-            this.miLogout.Size = new System.Drawing.Size(275, 57);
-            this.miLogout.TabIndex = 6;
-            this.miLogout.Text = "          Logout";
-            this.miLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.miLogout.UseVisualStyleBackColor = true;
-            this.miLogout.Click += new System.EventHandler(this.miLogout_Click);
             // 
             // miAbout
             // 
@@ -363,6 +260,40 @@
             this.miDashboard.Click += new System.EventHandler(this.miDashboard_Click);
             this.miDashboard.Leave += new System.EventHandler(this.miDashboard_Leave);
             // 
+            // panelMenu
+            // 
+            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.panelMenu.Controls.Add(this.miLogout);
+            this.panelMenu.Controls.Add(this.pnMenu);
+            this.panelMenu.Controls.Add(this.pictureBox1);
+            this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelMenu.Location = new System.Drawing.Point(0, 0);
+            this.panelMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelMenu.Name = "panelMenu";
+            this.panelMenu.Size = new System.Drawing.Size(275, 662);
+            this.panelMenu.TabIndex = 0;
+            // 
+            // miLogout
+            // 
+            this.miLogout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.miLogout.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.miLogout.FlatAppearance.BorderSize = 0;
+            this.miLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.miLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.miLogout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(46)))));
+            this.miLogout.Image = global::ShortCourseTrainingSystem.Properties.Resources.Vector__3_;
+            this.miLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.miLogout.Location = new System.Drawing.Point(0, 605);
+            this.miLogout.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.miLogout.Name = "miLogout";
+            this.miLogout.Padding = new System.Windows.Forms.Padding(20, 7, 0, 7);
+            this.miLogout.Size = new System.Drawing.Size(275, 57);
+            this.miLogout.TabIndex = 6;
+            this.miLogout.Text = "          Logout";
+            this.miLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.miLogout.UseVisualStyleBackColor = true;
+            this.miLogout.Click += new System.EventHandler(this.miLogout_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -374,6 +305,76 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.SystemColors.Control;
+            this.panel2.Controls.Add(this.lbTabName);
+            this.panel2.Controls.Add(this.pnUser);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(275, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(894, 66);
+            this.panel2.TabIndex = 1;
+            // 
+            // lbTabName
+            // 
+            this.lbTabName.AutoSize = true;
+            this.lbTabName.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTabName.Location = new System.Drawing.Point(37, 27);
+            this.lbTabName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbTabName.Name = "lbTabName";
+            this.lbTabName.Size = new System.Drawing.Size(161, 36);
+            this.lbTabName.TabIndex = 1;
+            this.lbTabName.Text = "Dashboard";
+            // 
+            // pnUser
+            // 
+            this.pnUser.Controls.Add(this.lbUserName);
+            this.pnUser.Controls.Add(this.picUser);
+            this.pnUser.Controls.Add(this.lbPosition);
+            this.pnUser.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.pnUser.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pnUser.Location = new System.Drawing.Point(607, 0);
+            this.pnUser.Margin = new System.Windows.Forms.Padding(4);
+            this.pnUser.Name = "pnUser";
+            this.pnUser.Size = new System.Drawing.Size(287, 66);
+            this.pnUser.TabIndex = 0;
+            // 
+            // lbUserName
+            // 
+            this.lbUserName.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbUserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.lbUserName.Location = new System.Drawing.Point(0, 9);
+            this.lbUserName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbUserName.Name = "lbUserName";
+            this.lbUserName.Size = new System.Drawing.Size(199, 25);
+            this.lbUserName.TabIndex = 4;
+            this.lbUserName.Text = "Phol Somnang";
+            this.lbUserName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lbPosition
+            // 
+            this.lbPosition.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPosition.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.lbPosition.Location = new System.Drawing.Point(0, 31);
+            this.lbPosition.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbPosition.Name = "lbPosition";
+            this.lbPosition.Size = new System.Drawing.Size(199, 20);
+            this.lbPosition.TabIndex = 5;
+            this.lbPosition.Text = "Cashier";
+            this.lbPosition.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // pnLoadForm
+            // 
+            this.pnLoadForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnLoadForm.Location = new System.Drawing.Point(275, 66);
+            this.pnLoadForm.Margin = new System.Windows.Forms.Padding(4);
+            this.pnLoadForm.Name = "pnLoadForm";
+            this.pnLoadForm.Size = new System.Drawing.Size(894, 596);
+            this.pnLoadForm.TabIndex = 2;
             // 
             // picUser
             // 
@@ -401,6 +402,7 @@
             this.Controls.Add(this.pnLoadForm);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panelMenu);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -409,10 +411,10 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.pnMenu.ResumeLayout(false);
             this.panelMenu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.pnUser.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picUser)).EndInit();
             this.ResumeLayout(false);
 

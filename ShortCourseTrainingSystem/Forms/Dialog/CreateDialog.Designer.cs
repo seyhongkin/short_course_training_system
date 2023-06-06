@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CreateDialog));
             this.lbName = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
             this.txtPeriod = new System.Windows.Forms.TextBox();
@@ -44,7 +45,7 @@
             this.lbName.AutoSize = true;
             this.lbName.Location = new System.Drawing.Point(16, 19);
             this.lbName.Name = "lbName";
-            this.lbName.Size = new System.Drawing.Size(51, 20);
+            this.lbName.Size = new System.Drawing.Size(64, 25);
             this.lbName.TabIndex = 0;
             this.lbName.Text = "Name";
             // 
@@ -52,14 +53,14 @@
             // 
             this.txtName.Location = new System.Drawing.Point(16, 43);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(318, 26);
+            this.txtName.Size = new System.Drawing.Size(318, 30);
             this.txtName.TabIndex = 1;
             // 
             // txtPeriod
             // 
             this.txtPeriod.Location = new System.Drawing.Point(16, 103);
             this.txtPeriod.Name = "txtPeriod";
-            this.txtPeriod.Size = new System.Drawing.Size(318, 26);
+            this.txtPeriod.Size = new System.Drawing.Size(318, 30);
             this.txtPeriod.TabIndex = 3;
             // 
             // lbPeriod
@@ -67,7 +68,7 @@
             this.lbPeriod.AutoSize = true;
             this.lbPeriod.Location = new System.Drawing.Point(16, 79);
             this.lbPeriod.Name = "lbPeriod";
-            this.lbPeriod.Size = new System.Drawing.Size(54, 20);
+            this.lbPeriod.Size = new System.Drawing.Size(68, 25);
             this.lbPeriod.TabIndex = 2;
             this.lbPeriod.Text = "Period";
             // 
@@ -75,7 +76,7 @@
             // 
             this.txtMonthlyPrice.Location = new System.Drawing.Point(16, 225);
             this.txtMonthlyPrice.Name = "txtMonthlyPrice";
-            this.txtMonthlyPrice.Size = new System.Drawing.Size(318, 26);
+            this.txtMonthlyPrice.Size = new System.Drawing.Size(318, 30);
             this.txtMonthlyPrice.TabIndex = 7;
             // 
             // lbMonthlyPrice
@@ -83,7 +84,7 @@
             this.lbMonthlyPrice.AutoSize = true;
             this.lbMonthlyPrice.Location = new System.Drawing.Point(16, 201);
             this.lbMonthlyPrice.Name = "lbMonthlyPrice";
-            this.lbMonthlyPrice.Size = new System.Drawing.Size(103, 20);
+            this.lbMonthlyPrice.Size = new System.Drawing.Size(130, 25);
             this.lbMonthlyPrice.TabIndex = 6;
             this.lbMonthlyPrice.Text = "Monthly Price";
             // 
@@ -91,7 +92,7 @@
             // 
             this.txtPrice.Location = new System.Drawing.Point(16, 165);
             this.txtPrice.Name = "txtPrice";
-            this.txtPrice.Size = new System.Drawing.Size(318, 26);
+            this.txtPrice.Size = new System.Drawing.Size(318, 30);
             this.txtPrice.TabIndex = 5;
             // 
             // lbPrice
@@ -99,7 +100,7 @@
             this.lbPrice.AutoSize = true;
             this.lbPrice.Location = new System.Drawing.Point(16, 141);
             this.lbPrice.Name = "lbPrice";
-            this.lbPrice.Size = new System.Drawing.Size(44, 20);
+            this.lbPrice.Size = new System.Drawing.Size(56, 25);
             this.lbPrice.TabIndex = 4;
             this.lbPrice.Text = "Price";
             // 
@@ -119,7 +120,7 @@
             // 
             // CreateDialog
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(356, 340);
             this.Controls.Add(this.btnCreate);
@@ -132,6 +133,7 @@
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.lbName);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "CreateDialog";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
