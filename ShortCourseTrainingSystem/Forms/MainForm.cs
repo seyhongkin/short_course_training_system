@@ -14,17 +14,25 @@ namespace ShortCourseTrainingSystem
 {
     public partial class MainForm : Form
     {
+        public static Dictionary<string, string> user;
         private Color dBackColor = Color.FromArgb(50,50,50);
         private Color cBackColor = Color.FromArgb(89, 89, 89);
         public MainForm()
         {
             InitializeComponent();
         }
+        public MainForm(Dictionary<string,string> u)
+        {
+            InitializeComponent();
+            user = u;
+        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             lbTabName.Text = "Dashboard";           
             miDashboard_Click(sender, e);
+            lbUserName.Text = user["username"].ToUpper();
+            lbPosition.Text = user["position"];
         }
 
         private void MainForm_FormClosed(object sender, FormClosedEventArgs e)

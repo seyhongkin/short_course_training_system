@@ -29,6 +29,11 @@ namespace ShortCourseTrainingSystem.Forms.Display
 
         private void btnAddCourse_Click(object sender, EventArgs e)
         {
+            if (MainForm.user["position"] != "admin")
+            {
+                MessageBox.Show("No Authorized", "Authorize", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                return;
+            }
             CreateDialog createDialog = new CreateDialog();
             DialogResult result = createDialog.ShowDialog();
             if (result == DialogResult.OK)
@@ -61,6 +66,11 @@ namespace ShortCourseTrainingSystem.Forms.Display
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
+            if (MainForm.user["position"] != "admin")
+            {
+                MessageBox.Show("No Authorized", "Authorize", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                return;
+            }
             if (dgvCourse.SelectedRows.Count == 0)
             {
                 MessageBox.Show("No Row selected");
@@ -119,6 +129,11 @@ namespace ShortCourseTrainingSystem.Forms.Display
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
+            if (MainForm.user["position"] != "admin")
+            {
+                MessageBox.Show("No Authorized", "Authorize", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                return;
+            }
             if (dgvCourse.SelectedRows.Count == 0)
             {
                 MessageBox.Show("No Row selected");

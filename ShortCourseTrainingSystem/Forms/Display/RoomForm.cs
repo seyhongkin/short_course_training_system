@@ -29,7 +29,12 @@ namespace ShortCourseTrainingSystem.Forms.Display
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            if(dgvRoom.SelectedRows.Count == 0)
+            if (MainForm.user["position"] != "admin")
+            {
+                MessageBox.Show("No Authorized", "Authorize", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                return;
+            }
+            if (dgvRoom.SelectedRows.Count == 0)
             {
                 MessageBox.Show("No rows selected!");
                 return;
@@ -67,6 +72,11 @@ namespace ShortCourseTrainingSystem.Forms.Display
 
         private void btnAddRoom_Click(object sender, EventArgs e)
         {
+            if (MainForm.user["position"] != "admin")
+            {
+                MessageBox.Show("No Authorized", "Authorize", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                return;
+            }
             RoomDialog rDialog = new RoomDialog();
             DialogResult result = rDialog.ShowDialog();
             if(result == DialogResult.OK)
@@ -99,7 +109,12 @@ namespace ShortCourseTrainingSystem.Forms.Display
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            if(dgvRoom.SelectedRows.Count == 0)
+            if (MainForm.user["position"] != "admin")
+            {
+                MessageBox.Show("No Authorized", "Authorize", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                return;
+            }
+            if (dgvRoom.SelectedRows.Count == 0)
             {
                 MessageBox.Show("No row selected");
                 return;

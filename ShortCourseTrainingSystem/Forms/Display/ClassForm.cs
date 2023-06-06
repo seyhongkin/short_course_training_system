@@ -215,6 +215,11 @@ namespace ShortCourseTrainingSystem.Forms.Display
 
         private void btnAttendance_Click(object sender, EventArgs e)
         {
+            if (MainForm.user["position"] != "admin")
+            {
+                MessageBox.Show("No Authorized","Authorize",MessageBoxButtons.OKCancel,MessageBoxIcon.Information);
+                return;
+            }
             if (dgvClass.SelectedRows.Count == 0)
             {
                 MessageBox.Show("No row selected");
@@ -229,6 +234,11 @@ namespace ShortCourseTrainingSystem.Forms.Display
 
         private void btnExam_Click(object sender, EventArgs e)
         {
+            if (MainForm.user["position"] != "admin")
+            {
+                MessageBox.Show("No Authorized", "Authorize", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                return;
+            }
             if (dgvClass.SelectedRows.Count == 0)
             {
                 MessageBox.Show("No row selected");

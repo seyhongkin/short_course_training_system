@@ -29,6 +29,11 @@ namespace ShortCourseTrainingSystem.Forms.Display
 
         private void btnAddTeacher_Click(object sender, EventArgs e)
         {
+            if (MainForm.user["position"] != "admin")
+            {
+                MessageBox.Show("No Authorized", "Authorize", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                return;
+            }
             TeacherDialog tDialog = new TeacherDialog();
             tDialog.cbGender.SelectedIndex = 0;
             tDialog.cbMaritalStatus.SelectedIndex = 0;
@@ -78,6 +83,11 @@ namespace ShortCourseTrainingSystem.Forms.Display
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
+            if (MainForm.user["position"] != "admin")
+            {
+                MessageBox.Show("No Authorized", "Authorize", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                return;
+            }
             if (dgvTeacher.SelectedRows.Count == 0)
             {
                 MessageBox.Show("No row seleted");
@@ -133,6 +143,11 @@ namespace ShortCourseTrainingSystem.Forms.Display
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
+            if (MainForm.user["position"] != "admin")
+            {
+                MessageBox.Show("No Authorized", "Authorize", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                return;
+            }
             if (dgvTeacher.SelectedRows.Count == 0)
             {
                 MessageBox.Show("No row seleted");

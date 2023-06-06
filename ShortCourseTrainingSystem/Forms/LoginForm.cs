@@ -98,6 +98,8 @@ namespace ShortCourseTrainingSystem.Forms
         {
             string username = txtUsername.Text.Trim();
             string password = txtPassword.Text.Trim();
+
+
             if (username == "")
             {
                 txtUsername.Focus();
@@ -110,17 +112,19 @@ namespace ShortCourseTrainingSystem.Forms
                 lbWarning.Text = "Field password field cannot be empty.";
                 return;
             }
-
-            if (username != "admin" || password != "admin")
+            foreach (Dictionary<string, string> u in DataStore.users)
             {
-                txtUsername.Focus();
-                lbWarning.Text = "The username or password is incorrect.";
-                return;
+                if (u["username"] == username && u["password"] == password)
+                {
+                    this.Hide();
+                    MainForm mainForm = new MainForm(u);
+                    mainForm.Show();
+                    break;
+                }
             }
-
-            this.Hide();
-            MainForm mainForm = new MainForm();
-            mainForm.Show();
+            txtUsername.Focus();
+            lbWarning.Text = "The username or password is incorrect.";
+            return;
         }
 
         private void cbShowPassword_CheckedChanged(object sender, EventArgs e)
@@ -160,6 +164,6 @@ namespace ShortCourseTrainingSystem.Forms
             lbWarning.Text = "";
         }
 
-        
+
     }
 }

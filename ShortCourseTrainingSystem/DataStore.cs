@@ -8,6 +8,23 @@ namespace ShortCourseTrainingSystem
 {
     internal class DataStore
     {
+        public static List<Dictionary<string, string>> users = new List<Dictionary<string, string>>()
+        {
+            new Dictionary<string, string>()
+            {
+                {"id","1" },
+                {"username","admin" },
+                {"password","admin" },
+                {"position","Admin" }
+            },
+            new Dictionary<string, string>()
+            {
+                {"id","2" },
+                {"username","hong" },
+                {"password","admin" },
+                {"position","Receptionist" }
+            }
+        };
         public static List<Dictionary<string, string>> courses = new List<Dictionary<string, string>>()
         {
             new Dictionary<string, string>()

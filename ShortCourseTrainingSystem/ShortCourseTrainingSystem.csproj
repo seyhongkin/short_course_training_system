@@ -562,6 +562,12 @@
   <ItemGroup>
     <None Include="Resources\simple-icons_googleclassroom %281%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\552721.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Fody.4.0.2\build\Fody.targets" Condition="Exists('..\packages\Fody.4.0.2\build\Fody.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
