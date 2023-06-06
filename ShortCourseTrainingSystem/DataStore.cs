@@ -15,14 +15,14 @@ namespace ShortCourseTrainingSystem
                 {"id","1" },
                 {"username","admin" },
                 {"password","admin" },
-                {"position","Admin" }
+                {"position","admin" }
             },
             new Dictionary<string, string>()
             {
                 {"id","2" },
-                {"username","hong" },
+                {"username","seyhong" },
                 {"password","admin" },
-                {"position","Receptionist" }
+                {"position","receptionist" }
             }
         };
         public static List<Dictionary<string, string>> courses = new List<Dictionary<string, string>>()

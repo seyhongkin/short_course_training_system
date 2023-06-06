@@ -32,7 +32,7 @@ namespace ShortCourseTrainingSystem
             lbTabName.Text = "Dashboard";           
             miDashboard_Click(sender, e);
             lbUserName.Text = user["username"].ToUpper();
-            lbPosition.Text = user["position"];
+            lbPosition.Text = char.ToUpper(user["position"][0]) + user["position"].Substring(1);
         }
 
         private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
